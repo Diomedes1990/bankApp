@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cuentas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+
+<!-- Item Labels -->
+<ion-item>
+  <ion-label color="primary">Tarjetas ({{bankservice.creditCards.length}})</ion-label>
+</ion-item>
+
+
+<!-- Listade tarjetas -->
+<ion-list>
+  <ion-item button *ngFor="let item of bankservice.creditCards">
+    <ion-label text-wrap>
+      <h3>{{ item.alias }}</h3>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+
+</ion-content>
